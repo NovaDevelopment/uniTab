@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+        <script src="googleIntegrationScripts/initScript.js"></script>
+        <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
+        <meta name="google-signin-client_id" content="884479036831-bcvvjr9c18ntogg08g5cd17i3o9dodia.apps.googleusercontent.com">
+        <script src="generalFunctions.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="shortcut icon" href="/favicon.png">
+        <script src="Script.js" language="javascript"></script>
+        <title>New Tab | uniTab</title>
+    </head>
+    <body>
+        <div id="googleSignIn_button" class="g-signin2" data-onsuccess="onSignIn"></div>
+        <input type="text" id="googleSearch" autocomplete="off" placeholder="Google Search">
+        <input type="button" id="gSearchButton" value="Search" onclick="gSearch(document.getElementById('googleSearch').value)">
+        <form id="clockConfig_form" hidden>
+            <select id="clockConfig_timeZone">
+                <option value="" disabled selected>SELECT A TIME ZONE FOR CLOCK</option>
+                <option value="" disabled>U.S. Time Zones</option>
+                <option value="ST">Samoa Time</option>
+                <option value="HAT">Hawaii-Aleutian Time</option>
+                <option value="AKT">Alaska Time</option>
+                <option value="PT">Pacific Time</option>
+                <option value="MT">Mountain Time</option>
+                <option value="CT">Central Time</option>
+                <option value="ET">Eastern Time</option>
+                <option value="AT">Atlantic Time</option>
+                <option value="ChST">Chamorro Time</option>
+                <option value="WIT">Wake Island Time</option>
+                <option value="" disabled>Other Time Zones</option>
+                <option value="UTC">Universal Time Coordinated (Greenwich Mean Time)</option>
+            </select>
+            <input type="button" id="clockConfig_button" value="Configure Clock" onclick="clockConfig(document.getElementById('clockConfig_timeZone').value, false)">
+        </form>
+        <form id="nameConfigForm" hidden>
+            <input type="text" id="userName" placeholder="Enter your name">
+            <input type="button" value="Configure Username" onclick="nameConfig(document.getElementById('userName').value, false)">
+        </form>
+        <div id="main">
+            <iframe src="" id="clock"></iframe>
+            <p id="greeting">Hello, ...</p>
+        </div>
+        <input type="button" id="resetButton" value="Reset" onclick="window.open('reset.html', 'popUpWindow', 'toolbar=no, width=750px, height: 660px')">
+    </body>
+    <script src="config.js"></script>
+    <script src="googleIntegrationScripts/mainIntegrationScript.js"></script>
+</html>

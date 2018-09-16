@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+html {
+    font-family: 'Lato';
+}
+#clock {
+    text-align: center;
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: default;
+}
