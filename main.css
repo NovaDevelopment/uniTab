@@ -18,6 +18,9 @@ input[type=button]{
     padding: 5px;
     cursor: pointer;
 }
+#setup {
+    margin-bottom: 5px;
+}
 #center {
     position: absolute;
     left: 50%;
@@ -28,11 +31,11 @@ input[type=button]{
     color: white;
     z-index: 1;
 }
-#clockText {
-    font-size: 45px;
-    margin-top: 0px;
-}
 #greeting {
     font-size: 60px;
     margin-bottom: 15px;
+}
+#clockText {
+    font-size: 45px;
+    margin-top: 0px;
 }
