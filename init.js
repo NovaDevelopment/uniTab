@@ -1,7 +1,7 @@
 var clock = {testConsoleMessagesDisplayed:0, statusDisplayed:false};
 var user = {name:undefined, };
 function refreshclock() {
-    document.getElementById("clockText").innerHTML = moment().format('MMMM D, YYYY') + "<br>" + moment().format("H:m")
+    document.getElementById("clockText").innerHTML = moment().format('MMMM D, YYYY') + "<br>" + moment().format("H:mm")
     if(clock.testConsoleMessagesDisplayed <= 10){
         console.log("Clock refreshed on " + moment().format('YYYY.MM.DD') + " at " + moment().format("HH.mm.ss"))
         clock.testConsoleMessagesDisplayed ++;
