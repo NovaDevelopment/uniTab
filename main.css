@@ -1,81 +1,38 @@
-@keyframes gSearchButton {
-    100% {
-       background-color: rgb(124, 202, 255);
-    }
-}
-@keyframes gSearchBar {
-    100% {
-        background-color: rgb(255, 140, 140);
-    }
-}
-@keyframes redShift {
-    100% {
-        background-color: rgb(255, 127, 127);
-        color: white;
-    }
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext');
 html {
-    background: linear-gradient(135deg, rgb(255, 89, 89) 0%, rgb(255, 106, 0) 100%);
-    color: white;
     min-height: 100%;
-    font-family: 'Lato';
+    background: linear-gradient(135deg, red 0%, orange 100%);
+    font-family: 'Open Sans';
 }
-a {
-    color: white;
-    text-decoration: none; 
+input {
+    font-family: inherit;
+}
+input[type=text] {
+    border-width: 0px;
+    padding: 5px;
+    background-color: #f2f2f2;
 }
 input[type=button]{
+    border-width: 0px;
+    background-color: white;
+    padding: 5px;
     cursor: pointer;
 }
-.g-signin2 {
-    margin-bottom: 5px;
-}
-#main {
+#center {
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    z-index: 1;
     text-align: center;
+    color: white;
+    z-index: 1;
 }
-#clock {
-    border-width: 0px;
-    cursor: default;
-    width: 500px;
-}
-#greeting {
-    font-size: 50px;
+#clockText {
+    font-size: 45px;
     margin-top: 0px;
 }
-#googleSearch:focus {
-    animation: gSearchBar forwards;
-    animation-duration: 1s;
-}
-#gSearchButton {
-    background-color: white;
-    color: black;
-    border-width: 0px;
-    padding: 3px;
-}
-#gSearchButton:hover {
-    animation: gSearchButton forwards;
-    animation-duration: 1s;
-    cursor: pointer;
-}
-#gSearchForm {
-    float: left;
-}
-#resetButton {
-    background-color: white;
-    position: absolute;
-    right: 0;
-    margin-right: 5px;
-    padding: 3px;
-    padding-left: 6px;
-    padding-right: 6px;
-    border-width: 0px;
-}
-#resetButton:hover {
-    animation: redShift forwards;
-    animation-duration: 3s;
+#greeting {
+    font-size: 60px;
+    margin-bottom: 15px;
 }
