@@ -18,6 +18,10 @@ input[type=button]{
     padding: 5px;
     cursor: pointer;
 }
+.timeDateText {
+    font-size: 45px;
+    margin: 0px;
+}
 #setup {
     margin-bottom: 5px;
 }
@@ -30,12 +34,9 @@ input[type=button]{
     text-align: center;
     color: white;
     z-index: 1;
+    width: 100%;
 }
 #greeting {
     font-size: 60px;
     margin-bottom: 15px;
-}
-#clockText {
-    font-size: 45px;
-    margin-top: 0px;
 }

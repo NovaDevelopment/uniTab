@@ -14,14 +14,15 @@
         <div id="setup">
             <div hidden id="setup-name">
                 <input type="text" placeholder="Enter Your Name" id="userName">
-                <input type="button" value="Save Name" onclick="setup.saveName(document.getElementById('userName').value)">
+                <input type="button" value="Save Name" id="button-SaveName">
             </div>
         </div>
         <input type="text" placeholder="Google Search" id="googleSearch">
-        <input type="button" value="Search" onclick="gSearch(document.getElementById('googleSearch').value)">
+        <input type="button" value="Search" id="button-Search">
         <div id="center">
             <p id="greeting" oncontextmenu="setup.saveName(prompt('Enter a new name.')); return false;"></p>
-            <p id="clockText"></p>
+            <p id="clockText" class="timeDateText"></p>
+            <p id="dateText" class="timeDateText"></p>
         </div>
     </body>
     <script src="init.js" type="text/javascript"></script>
